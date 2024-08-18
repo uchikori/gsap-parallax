@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 本番Build後に有効にする -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    .about {
+      width: 100%;
+      position: relative;
+      padding-top: 100vh;
+    }
+    .aboutArea {
+      padding: 5rem 0;
+      position: relative;
+      border-top: solid 1px red;
+      border-bottom: solid 1px red;
+    }
+    .overlay {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+      visibility: visible;
+      background: url(images/noe-araujo-56wK2w3sMOo-unsplash.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      object-fit: cover;
+      overflow: hidden;
+    }
+    .absolute {
+      position: absolute !important;
+    }
+    .aboutEnbInner {
+      width: 1600px;
+      height: 100vh;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .aboutEndText {
+      width: 30rem;
+      /* top: 50%; */
+      /* margin: -25rem 0 0 -68rem; */
+      /* position: absolute; */
+      z-index: 1;
+      /* left: 50%; */
+      will-change: transform;
+    }
+  </style>
+  <body>
+    <div
+      class=""
+      style="height: 100vh; background: black; position: relative; z-index: 3"
+    ></div>
+    <section class="about">
+      <div class="aboutArea">
+        <div class="overlay">
+          <div class="overlayLine"></div>
+        </div>
+        <div class="aboutEnbInner">
+          <div class="aboutEndText">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+            rerum natus, exercitationem non dolorem fuga vel nostrum praesentium
+            ut commodi excepturi dicta culpa ipsam optio voluptatem porro
+            repellendus. Error, dolores!
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="" style="height: 100vh; background: blue"></div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
