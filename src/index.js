@@ -19,13 +19,15 @@ tl.to(".overlay", {
     scrub: 0.5,
     markers: true,
     // pin: true,
+    // anticipatePin: true,
+    // pinReparent: true,
     // onEnter: () => {
     //   const overlay = document.querySelector(".overlay");
     //   overlay.style.position = "fixed";
     // },
   },
   width: "30%",
-  height: "30%",
+  height: "500px",
   borderRadius: "32px",
 });
 
